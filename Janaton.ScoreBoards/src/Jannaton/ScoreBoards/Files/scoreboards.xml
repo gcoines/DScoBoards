@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--SCOREBOARDS XML CONFIG FILE-->
+<scoreboards>
+    <scoreboard sport="basketball" id="basketball" name="Basketball">
+        <layout>
+            <columns>
+                <column hAlignment="center"/>
+                <column />
+                <column />
+            </columns>
+            <rows>
+                <row vAlignment="middle"/>
+                <row />
+                <row />
+                <row />
+                <row />
+            </rows>
+        </layout>
+        <components>
+            <counter id="counter1" colIndex="0" rowIndex="0" rowSpan="2" style="style1"/>
+            <text id="text1" colIndex="0" rowIndex="2" style="style2"/>
+            <counter id="faults1" colIndex="0" rowIndex="3" style="style2"/>
+            <text id="ftext1" colIndex="0" rowIndex="4" style="style2"/>
+            <timer id="timer1" colIndex="1" rowIndex="0" style="style1"/>
+            <counter id="period1" colIndex="1" rowIndex="1" style="style1"/>
+            <text id="ptext1" colIndex="1" rowIndex="2" style="style2"/>
+            <counter id="counter2" colIndex="2" rowIndex="0" rowSpan="2" style="style1"/>
+            <text id="text2" colIndex="2" rowIndex="2" style="style2"/>
+            <counter id="faults2" colIndex="2" rowIndex="3" style="style2"/>
+            <text id="ftext2" colIndex="2" rowIndex="4" style="style2"/>
+        </components>
+        <styles>
+            <background>
+                <image fileName="scrbBasket.png"/>
+            </background>
+            <style id="style1" fontSize="90%" color="#000000" />
+            <style id="style2" fontSize="85%" color="#000000" />
+        </styles>
+        <menu>
+            <button>
+                <image fileName="btnSportsBasketball.png"/>
+            </button>
+            <configurations>
+                <configuration id="counter1" fieldType="numeric" fieldName="Local score" minValue="0" maxValue="999"/>
+                <configuration id="text1" fieldType="text" fieldName="Local team name" default="LOCAL"/>
+                <configuration id="faults1" fieldType="numeric" fieldName="Local team faults" minValue="0" maxValue="5"/>
+                <configuration id="ftext1" fieldType="text" fieldName="Local team faults text" default="FALTAS"/>
+                <configuration id="timer1" fieldType="timeDes" fieldName="Period time" minValue="00m00s" maxValue="10m00s"/>
+                <configuration id="period1" fieldType="numeric" fieldName="Period amount" minValue="0" maxValue="4"/>
+                <configuration id="ptext1" fieldType="text" fieldName="Period text" default="PERÍODO"/>
+                <configuration id="counter2" fieldType="numeric" fieldName="Visitor score" minValue="0" maxValue="999"/>
+                <configuration id="text2" fieldType="text" fieldName="Visitor team name" default="VISITANTE"/>
+                <configuration id="faults2" fieldType="numeric" fieldName="Visitor team faults" minValue="0" maxValue="5"/>
+                <configuration id="ftext2" fieldType="text" fieldName="Visitor team faults text" default="FALTAS"/>
+            </configurations>
+        </menu>
+        <controlPanel>
+            <layout>
+                <columns>
+                    <column hAlignment="center"/>
+                    <column />
+                    <column />
+                </columns>
+                <rows>
+                    <row vAlignment="middle"/>
+                    <row />
+                    <row />
+                    <row />
+                </rows>
+            </layout>
+            <components>
+                <buttonsPane id="counter1" colIndex="0" rowIndex="0" rowSpan="2" >
+                    <layout>
+                        <columns>
+                            <column hAlignment="center"/>
+                            <column />
+                            <column />
+                        </columns>
+                        <rows>
+                            <row />
+                            <row />
+                        </rows>
+                    </layout>
+                    <components>
+                        <button id="b1" colIndex="0" rowIndex="0" text="+ 1"/>
+                        <button id="b2" colIndex="0" rowIndex="1" text="- 1"/>
+                        <button id="b3" colIndex="1" rowIndex="0" text="+ 2"/>
+                        <button id="b4" colIndex="1" rowIndex="1" text="- 2"/>
+                        <button id="b5" colIndex="2" rowIndex="0" text="+ 3"/>
+                        <button id="b6" colIndex="2" rowIndex="1" text="- 3"/>
+                    </components>
+                </buttonsPane>
+                <buttonsPane id="faults1" colIndex="0" rowIndex="2" rowSpan="2">
+                    <layout>
+                        <columns>
+                            <column hAlignment="center"/>
+                        </columns>
+                        <rows>
+                            <row />
+                            <row />
+                        </rows>
+                    </layout>
+                    <components>
+                        <button id="b1" colIndex="0" rowIndex="0" text="+ 1"/>
+                        <button id="b2" colIndex="0" rowIndex="1" text="- 1"/>
+                    </components>
+                </buttonsPane>
+                <buttonsPane id="timer1" colIndex="1" rowIndex="0" />
+                <buttonsPane id="period1" colIndex="1" rowIndex="1" >
+                    <layout>
+                        <columns>
+                            <column hAlignment="center"/>
+                        </columns>
+                        <rows>
+                            <row />
+                            <row />
+                        </rows>
+                    </layout>
+                    <components>
+                        <button id="b1" colIndex="0" rowIndex="0" text="+ 1"/>
+                        <button id="b2" colIndex="0" rowIndex="1" text="- 1"/>
+                    </components>
+                </buttonsPane>
+                <image fileName="dscoboards.png" colIndex="1" rowIndex="2" rowSpan="2"/>
+                <buttonsPane id="counter2" colIndex="2" rowIndex="0" rowSpan="2" >
+                    <layout>
+                        <columns>
+                            <column hAlignment="center"/>
+                            <column />
+                            <column />
+                        </columns>
+                        <rows>
+                            <row />
+                            <row />
+                        </rows>
+                    </layout>
+                    <components>
+                        <button id="b1" colIndex="0" rowIndex="0" text="+ 1"/>
+                        <button id="b2" colIndex="0" rowIndex="1" text="- 1"/>
+                        <button id="b3" colIndex="1" rowIndex="0" text="+ 2"/>
+                        <button id="b4" colIndex="1" rowIndex="1" text="- 2"/>
+                        <button id="b5" colIndex="2" rowIndex="0" text="+ 3"/>
+                        <button id="b6" colIndex="2" rowIndex="1" text="- 3"/>
+                    </components>
+                </buttonsPane>
+                <buttonsPane id="faults2" colIndex="2" rowIndex="2" rowSpan="2">
+                    <layout>
+                        <columns>
+                            <column hAlignment="center"/>
+                        </columns>
+                        <rows>
+                            <row />
+                            <row />
+                        </rows>
+                    </layout>
+                    <components>
+                        <button id="b1" colIndex="0" rowIndex="0" text="+ 1"/>
+                        <button id="b2" colIndex="0" rowIndex="1" text="- 1"/>
+                    </components>
+                </buttonsPane>
+            </components>
+        </controlPanel>
+    </scoreboard>
+    <scoreboard sport="football" id="football" name="Football">
+        <layout>
+            <columns>
+                <column hAlignment="center"/>
+                <column />
+                <column />
+            </columns>
+            <rows>
+                <row vAlignment="middle"/>
+                <row />
+                <row />
+            </rows>
+        </layout>
+        <components>
+            <counter id="counter1" colIndex="0" rowIndex="0" rowSpan="2" style="style1"/>
+            <text id="text1" colIndex="0" rowIndex="2" style="style2"/>            
+            <chronometer id="chrono1" colIndex="1" rowIndex="0" style="style1"/>
+            <counter id="period1" colIndex="1" rowIndex="1" style="style1"/>
+            <text id="ptext1" colIndex="1" rowIndex="2" style="style2"/>
+            <counter id="counter2" colIndex="2" rowIndex="0" rowSpan="2" style="style1"/>
+            <text id="text2" colIndex="2" rowIndex="2" style="style2"/>
+        </components>
+        <styles>
+            <background>
+                <image fileName="scrbBasket.png"/>
+            </background>
+            <style id="style1" fontSize="90%" color="#000000" />
+            <style id="style2" fontSize="85%" color="#000000" />
+        </styles>
+        <menu>
+            <button>
+                <image fileName="btnSportsFootball.png"/>
+            </button>
+            <configurations>
+                <configuration id="counter1" fieldType="numeric" fieldName="Local score" minValue="0" maxValue="99"/>
+                <configuration id="text1" fieldType="text" fieldName="Local team name" default="LOCAL"/>
+                <configuration id="chrono1"  fieldType="timeAsc" fieldName="Period time" minValue="00m00s" maxValue="45m00s"/>
+                <configuration id="period1" fieldType="numeric" fieldName="Period amount" minValue="0" maxValue="2"/>
+                <configuration id="ptext1" fieldType="text" fieldName="Period text" default="PERÍODO"/>
+                <configuration id="counter2" fieldType="numeric" fieldName="Visitor score" minValue="0" maxValue="99"/>
+                <configuration id="text2" fieldType="text" fieldName="Visitor team name" default="VISITANTE"/>
+            </configurations>
+        </menu>
+        <controlPanel>
+            <layout>
+                <columns>
+                    <column hAlignment="center"/>
+                    <column />
+                    <column />
+                </columns>
+                <rows>
+                    <row vAlignment="middle"/>
+                    <row />
+                    <row />
+                </rows>
+            </layout>
+            <components>
+                <buttonsPane id="counter1" colIndex="0" rowIndex="0" rowSpan="2" >
+                    <layout>
+                        <columns>
+                            <column hAlignment="center"/>
+                        </columns>
+                        <rows>
+                            <row />
+                            <row />
+                        </rows>
+                    </layout>
+                    <components>
+                        <button id="b1" colIndex="0" rowIndex="0" text="+ 1"/>
+                        <button id="b2" colIndex="0" rowIndex="1" text="- 1"/>
+                    </components>
+                </buttonsPane>
+                <buttonsPane id="chrono1" colIndex="1" rowIndex="0" />
+                <buttonsPane id="period1" colIndex="1" rowIndex="1" >
+                    <layout>
+                        <columns>
+                            <column hAlignment="center"/>
+                        </columns>
+                        <rows>
+                            <row />
+                            <row />
+                        </rows>
+                    </layout>
+                    <components>
+                        <button id="b1" colIndex="0" rowIndex="0" text="+ 1"/>
+                        <button id="b2" colIndex="0" rowIndex="1" text="- 1"/>
+                    </components>
+                </buttonsPane>
+                <image fileName="dscoboards.png" colIndex="1" rowIndex="2" />
+                <buttonsPane id="counter2" colIndex="2" rowIndex="0" rowSpan="2" >
+                    <layout>
+                        <columns>
+                            <column hAlignment="center"/>
+                        </columns>
+                        <rows>
+                            <row />
+                            <row />
+                        </rows>
+                    </layout>
+                    <components>
+                        <button id="b1" colIndex="0" rowIndex="0" text="+ 1"/>
+                        <button id="b2" colIndex="0" rowIndex="1" text="- 1"/>
+                    </components>
+                </buttonsPane>
+            </components>
+        </controlPanel>
+    </scoreboard>
+    <scoreboard sport="tennis" id="tennis" name="Tennis" available="false">
+        <menu>
+            <button>
+                <image fileName="btnSportsTennis.png" />
+            </button>
+        </menu>
+    </scoreboard>
+    <scoreboard sport="rugby" id="rugby" name="Rugby" available="false">
+        <menu>
+            <button>
+                <image fileName="btnSportsRugby.png" />
+            </button>
+        </menu>
+    </scoreboard>
+</scoreboards>
