@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.transform.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane id="AnchorPane" fx:controller="Jannaton.ScoreBoards.UI.DisplaySelector"
+            xmlns:fx="http://javafx.com/fxml" styleClass="spMenu">
+    <AnchorPane maxHeight="150" styleClass="apEfectoCentral"/>
+    <GridPane styleClass="gpDisplaySelector" alignment="baseline_left" 
+              AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" 
+              AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0">
+        <padding>
+            <Insets top="25" right="25" bottom="25" left="25"/>
+        </padding>
+        <columnConstraints>
+            <ColumnConstraints percentWidth="100"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="30"/>
+            <RowConstraints percentHeight="70"/>
+        </rowConstraints>
+        <GridPane GridPane.rowIndex="0" styleClass="gpDisplaySelector1">
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <HBox id="botonesPanel" styleClass="hbBotones" GridPane.rowIndex="0"
+                  GridPane.halignment="left">
+                <Button styleClass="btnMenu" id="btnScoreBoards" 
+                        onAction="#btnScoreBoardsAction" fx:id="btnScoreBoards" >                        
+                    <graphic>
+                        <StackPane>                            
+                            <Circle radius="50" styleClass="crcMenu" />
+                            <Ellipse translateY="-30" radiusX="30" radiusY="13" styleClass="ellMenu" />
+                            <Circle translateY="5" radius="43" styleClass="crcMenu2" />
+                            <ImageView>
+                                <fitHeight>100</fitHeight>
+                                <fitWidth>100</fitWidth>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnMenuSports.png"/>
+                                </image>                            
+                            </ImageView>
+                        </StackPane>
+                    </graphic>
+                </Button>
+                    
+                <Button styleClass="btnMenu" id="btnDisplays" 
+                        onAction="#btnDisplaysAction" fx:id="btnDisplays" >
+                    <graphic>
+                        <StackPane>
+                            <Circle radius="75" styleClass="crcMenu" />
+                            <Ellipse translateY="-45" radiusX="45" radiusY="27" styleClass="ellMenu" />
+                            <Circle translateY="8" radius="64" styleClass="crcMenu2" />
+                            <ImageView>
+                                <fitHeight>115</fitHeight>
+                                <fitWidth>115</fitWidth>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnMenuDisplays.png"/>
+                                </image>                            
+                            </ImageView>
+                        </StackPane>
+                    </graphic>  
+                </Button>
+                    
+                <Button styleClass="btnMenu" id="btnConfig" 
+                        onAction="#btnConfigAction" fx:id="btnConfig" >
+                    <graphic>
+                        <StackPane>
+                            <Circle radius="50" styleClass="crcMenu" />
+                            <Ellipse translateY="-30" radiusX="30" radiusY="18" styleClass="ellMenu" />
+                            <Circle translateY="5" radius="43" styleClass="crcMenu2" />
+                            <ImageView>
+                                <fitHeight>100</fitHeight>
+                                <fitWidth>100</fitWidth>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnMenuSetup.png"/>
+                                </image>                            
+                            </ImageView>
+                        </StackPane>
+                    </graphic>  
+                </Button>
+                
+                <Button styleClass="btnMenu" id="btnStart" 
+                        onAction="#btnStartAction" fx:id="btnStart" >
+                    <graphic>
+                        <StackPane>
+                            <Circle radius="50" styleClass="crcMenu" />
+                            <Ellipse translateY="-30" radiusX="30" radiusY="18" styleClass="ellMenu" />
+                            <Circle translateY="5" radius="43" styleClass="crcMenu2" />
+                            <ImageView>
+                                <fitHeight>100</fitHeight>
+                                <fitWidth>100</fitWidth>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnMenuStart.png"/>
+                                </image>                            
+                            </ImageView>
+                            <Label text="START" textFill="WHITE" opacity="0.5" />
+                        </StackPane>
+                    </graphic>            
+                </Button>
+            </HBox>
+            <Label styleClass="lbDisplaySelector" GridPane.rowIndex="1"
+                   GridPane.columnSpan="2" GridPane.halignment="LEFT"
+                   text="Seleccione y arrastre la imagen que desea (izquierda) a la pantalla que le corresponda (derecha)"/>
+            <AnchorPane id="botonesPanel" styleClass="hbBotones" GridPane.rowIndex="2"
+                        GridPane.halignment="left" >
+                <HBox>
+                    <Button id="btnBack" onAction="#btnBack" fx:id="btnBack" 
+                            styleClass="btnDisplaySelector">
+                        <graphic>
+                            <StackPane styleClass="spButtonDS">
+                                <Label text="VOLVER" styleClass="lbButtonDisplaySelector"/>
+                            </StackPane>
+                        </graphic>
+                    </Button>
+                    <Button id="btnDetectDisplays" onAction="#btnDetectDisplays" 
+                            fx:id="btnDetectDisplays" styleClass="btnDisplaySelector">
+                        <graphic>
+                            <StackPane styleClass="spButtonDS">
+                                <Label text="DETECTAR PANTALLAS" styleClass="lbButtonDisplaySelector"/>
+                            </StackPane>
+                        </graphic>
+                    </Button>
+                    <Button id="btnAutoasignateDisplays" onAction="#btnAutoasignateDisplays" 
+                            fx:id="btnAutoasignateDisplays" styleClass="btnDisplaySelector">
+                        <graphic>
+                            <StackPane styleClass="spButtonDS">
+                                <Label text="AUTOASIGNAR PANTALLAS" styleClass="lbButtonDisplaySelector"/>
+                            </StackPane>
+                        </graphic>
+                    </Button>
+                </HBox>
+            </AnchorPane>  
+        </GridPane>
+        <GridPane GridPane.rowIndex="1" styleClass="gpDisplaySelector2">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="100"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="100"/>
+            </rowConstraints>
+            
+            <GridPane GridPane.rowIndex="0" vgap="25" hgap="25" gridLinesVisible="false">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="50"/>
+                    <ColumnConstraints percentWidth="50"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints percentHeight="100"/>
+                </rowConstraints>
+                <AnchorPane id="botonesPanel" styleClass="hbDisplaySelector" 
+                            GridPane.columnIndex="0" 
+                            GridPane.halignment="left" >
+                    <children>
+                        <ScrollPane fx:id="scpComponents" styleClass="spDisplaySelector"
+                               AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" 
+                               AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0">
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane id="botonesPanel" styleClass="hbDisplaySelector" 
+                            GridPane.columnIndex="1" 
+                            GridPane.halignment="left" >
+                    <children>
+                        <ScrollPane fx:id="spScreens" styleClass="spDisplaySelector"
+                               AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" 
+                               AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0">
+                            
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+            </GridPane>
+        </GridPane>
+    </GridPane>
+</AnchorPane>

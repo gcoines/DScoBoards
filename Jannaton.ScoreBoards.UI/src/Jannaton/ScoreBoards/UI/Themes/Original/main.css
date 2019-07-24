@@ -1,0 +1,359 @@
+/* 
+    Document   : Menu
+    Created on : 30-sep-2012, 15:39:24
+    Author     : german
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*******************************************************************************
+******************************   ESTILO COMUN   ********************************
+*******************************************************************************/
+.spMenu {
+    -fx-background-color:linear-gradient(#5a0c00, #ff7f00),  
+        radial-gradient(focus-distance 0% , center 50% 110% , radius 35% , #ffffff, #ffffff00);
+    /*-fx-effect:innerShadow(gaussian, white, 10, 1.0, 50, 50);*/
+}
+
+.bpTopMenu {
+
+}
+
+.hbBotones {
+    -fx-alignment: center;
+}
+
+.bpBottomMenu {
+
+}
+
+.apEfectoCentral {
+    -fx-background-color: linear-gradient(transparent, #ffffff55, transparent);
+    /* TODO perspectiva lineas centrales: linear-gradient(from 20px 50px to 50px 50px, reflect, transparent 30%, #ffffff33  47%)*/
+    -fx-background-position: center;
+}
+
+.lbBottomMenu {
+    -fx-font-family: Arial;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+/*******************************************************************************
+*******************************   ESTILO MENU   ********************************
+*******************************************************************************/
+.btnMenu {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-family: Arial;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.crcMenu{
+    -fx-fill: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , #ffd600, #ff7f00);
+}
+
+.crcHoverMenu{
+    -fx-fill: radial-gradient(focus-distance 0% , center 50% 50%, radius 50%, #ffffffff 75%, #ffffff00);
+    -fx-opacity: 0.0;
+}
+
+.ellMenu{
+    -fx-fill: linear-gradient(#ffffff 5%, #ffd60000 70%, transparent);
+}
+
+.crcMenu2{
+    -fx-fill: linear-gradient(#ffd60000 80%, #ffffff55 );
+}
+
+/*******************************************************************************
+*****************************   ESTILO DEPORTES   ******************************
+*******************************************************************************/
+.crcSportsNoAvailable{
+    -fx-fill: blue;
+    -fx-opacity: 0.6;
+}
+
+.lbNotAvailable{
+    -fx-font-family: Arial;
+    -fx-font-size: 20px;
+}
+
+/*******************************************************************************
+****************************   ESTILO PANTALLAS   ******************************
+*******************************************************************************/
+
+.gpDisplaySelector{
+    /*-fx-background-color: #ffffff;*/
+}
+.gpDisplaySelector1{
+    /*-fx-background-color: #ffffff;*/
+}
+.gpDisplaySelector2{
+    /*-fx-background-color: #ffffff;*/
+}
+
+.lbDisplaySelector{
+    -fx-font-family: Arial;
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+}
+
+.btnDisplaySelector {
+    -fx-background-color: #ff8c00;
+    -fx-cursor: hand;
+    /*    -fx-background-color: 
+            #ff8c00,
+            linear-gradient(#ffffff 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    */-fx-background-insets: 0 0 0 0;
+    -fx-padding: 3 5 4 5;
+    -fx-background-radius: 5;/*
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 0 30 0 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;*/
+}
+
+.spButtonDS {
+    -fx-background-color: linear-gradient(#ffffff66, #ff8c00 30%, #ff8c00 80%, #ffffff66 100% );
+    -fx-background-radius: 3;
+    -fx-padding: 5 40 5 40;
+}
+
+.lbButtonDisplaySelector {
+
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.hbDisplaySelector{
+    -fx-background-color: #ff8c00;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 15;
+    -fx-background-radius: 25;
+}
+
+.spDisplaySelector {
+    -fx-background-color: linear-gradient(#ffffff66, #ff8c00 30%, #ff8c00 80%, #ffffff66 100% );
+    -fx-background-radius: 25;
+    -fx-padding: 20;
+}
+
+.vbThumbs {
+    /*-fx-fill-to-width: true;*/
+}
+
+.hbThumbs{
+    -fx-cursor: hand;
+    -fx-spacing: 5;
+    /*-fx-background-color: #ffffff55;*/
+}
+
+.lbThumb {
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center-left;
+    -fx-font-size: 2pc;
+}
+
+.hbScreen {
+    
+}
+
+.spScreen{
+    -fx-alignment: center;
+    -fx-background-color: #00000099;
+    -fx-background-radius: 2pc;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1pc;
+    -fx-border-radius: 1pc;
+}
+
+.lbScreen{
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+    -fx-font-size: 5pc;
+    -fx-font-weight: bold;
+}
+
+.lbConfigField{
+    -fx-font-family: Arial;
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+}
+
+.configField {
+    
+    -fx-cursor: text;
+        -fx-background-color: 
+            #ff8c00,
+            linear-gradient(#ffffff66 0%, #ff8c00 30%, #ff8c00 80%, #ffffff66 100%);
+    -fx-background-insets: 0;
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+}
+
+.txtConfigField {
+    
+}
+
+.numConfigField {
+    
+}
+
+.timeConfigField {
+    
+}
+
+/*******************************************************************************
+**********************   ESTILO CONTROL MARCADORES COMUN  **********************
+*******************************************************************************/
+
+.spScoreBoardControl {
+/*    -fx-background-color:linear-gradient(#5a0c00, #ff7f00),  
+        radial-gradient(focus-distance 0% , center 50% 110% , radius 35% , #ffffff, #ffffff00);*/
+    -fx-background-color:#000000;
+    -fx-border-width: 0.5pc;
+    -fx-border-insets: 0.2pc;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 1pc;
+}
+
+.gpScoreBoardControl {
+    /*    -fx-border-width: 0.2pc;
+        -fx-border-insets: 1pc;
+        -fx-border-color: #ffffff;
+        -fx-border-radius: 0.8pc;*/
+    -fx-border-width: 0.2pc;
+    -fx-border-insets: 0.5pc;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 0.2pc;
+}
+
+.gpButtonsPane{ 
+    
+    -fx-background-color: linear-gradient(#5a0c00, #ff7f00);
+    -fx-background-insets: 0.5pc;
+    -fx-background-radius: 0.8pc;
+    -fx-border-width: 0.2pc;
+    -fx-border-color: #ffffff;
+    -fx-border-insets: 0.5pc;
+    -fx-border-radius: 0.8pc;
+/*    -fx-border-width: 0.2pc;
+    -fx-border-insets: 0.5pc;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 0.2pc;
+    -fx-alignment: center;*/
+}
+
+.btButtonsPane{
+    -fx-background-color: linear-gradient(#ffffff99 1%, #ff7f00 50%, #b23f01 100%);
+    -fx-border-width: 0.2pc;
+    -fx-border-radius: 0.7pc;
+    -fx-border-insets: -0.4pc;
+    -fx-border-color: #ff7f00;
+    -fx-cursor: hand;
+    -fx-font-family: Arial;
+    -fx-font-size: 2pc;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+}
+
+/*******************************************************************************
+**************************   ESTILO MARCADORES COMUN  **************************
+*******************************************************************************/
+
+.spScoreBoard {
+    -fx-background-color:#f96308,  
+        radial-gradient(focus-distance 0% , center 2% 2% , radius 45% , #f4e500, #f4e50000);
+    /*-fx-effect:innerShadow(gaussian, white, 10, 1.0, 50, 50);*/
+    -fx-cursor: null;
+}
+
+.gpScoreBoards {
+
+}
+
+/*******************************************************************************
+*****************************   ESTILO MARCADORES ******************************
+*******************************************************************************/
+
+#basketball{
+    -fx-background-image: url("img/scrbBasket.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right bottom;
+    -fx-background-size: 75%;
+}
+
+#football{
+    -fx-background-image: url("img/scrbFootball.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right bottom;
+    -fx-background-size: 75%;
+}
+/*******************************************************************************
+************************   ESTILO COMPONENTES COMUN   **************************
+*******************************************************************************/
+
+.spImage {
+    -fx-alignment: center;
+}
+
+.ivImage {
+/*    -fx-fill-height: true;
+    -fx-fill-width: true;*/
+    -fx-border-width: 2px;
+    -fx-border-color: #ffffff;
+}
+
+/*******************************************************************************
+**********************   ESTILO COMPONENTES ESPECIFICO   ***********************
+*******************************************************************************/
+
+
+.lbCounterComponent {
+    /*-fx-font-family: Century-Gothic;*/
+    /*-fx-fill: #ffffff;*/
+    -fx-font-size: 13pc;
+    -fx-text-fill: #ffffff;
+}
+
+.lbTextComponent {
+    /*-fx-font-family: Century-Gothic;*/
+    /*-fx-fill: #ffffff;*/
+    -fx-font-size: 5pc;
+    -fx-text-fill: #ffffff99;
+}
+
+.lbTimerComponent {
+    /*-fx-font-family: Century-Gothic;*/
+    /*-fx-fill: #ffffff;*/
+    -fx-font-size: 8pc;
+    -fx-border-width: 0.1pc;
+    -fx-border-insets: 0.2pc;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 1.8pc;
+    -fx-background-radius: 2pc;
+    -fx-background-color: #6e6e6e;
+    -fx-text-fill: #ffffff;
+}
+
+.lbChronometerComponent {
+    /*-fx-font-family: Century-Gothic;*/
+    /*-fx-fill: #ffffff;*/
+    -fx-font-size: 8pc;
+    -fx-border-width: 0.1pc;
+    -fx-border-insets: 0.2pc;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 1.8pc;
+    -fx-background-radius: 2pc;
+    -fx-background-color: #6e6e6e;
+    -fx-text-fill: #ffffff;
+}
+/*#label {
+    -fx-font-size: 30pc;
+}*/

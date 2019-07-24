@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.transform.*?>
+<?import javafx.geometry.*?>
+
+<StackPane id="AnchorPane" fx:controller="Jannaton.ScoreBoards.UI.Menu" 
+           xmlns:fx="http://javafx.com/fxml" styleClass="spMenu">
+
+    <AnchorPane maxHeight="150" styleClass="apEfectoCentral"/>
+    <BorderPane  styleClass="bpMenu">
+        <top>
+            <BorderPane styleClass="bpTopMenu">
+                <left>                
+                </left>
+                <right>
+                    <Button id="btnExit" text="Quit" onAction="#btnExitAction" fx:id="btnExit" />
+                </right>
+        
+            </BorderPane>
+        </top>
+        <center>
+            
+            <HBox id="botonesPanel" styleClass="hbBotones">
+                <Button styleClass="btnMenu" id="btnScoreBoards" 
+                        onMouseEntered="#setLabelText" onMouseExited="#resetLabelText"
+                        onAction="#btnScoreBoardsAction" fx:id="btnScoreBoards" >                        
+                    <graphic>
+                        <StackPane onMouseEntered="#highlightOn" onMouseExited="#highlightOff">                            
+                            <Circle radius="115" styleClass="crcHoverMenu" />
+                            <Circle radius="100" styleClass="crcMenu" />
+                            <Ellipse translateY="-60" radiusX="60" radiusY="35" styleClass="ellMenu" />
+                            <Circle translateY="10" radius="85" styleClass="crcMenu2" />
+                            <ImageView>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnMenuSports.png"/>
+                                </image>                            
+                            </ImageView>
+                        </StackPane>
+                    </graphic>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </Button>
+                    
+                <Button styleClass="btnMenu" id="btnDisplays" 
+                        onMouseEntered="#setLabelText" onMouseExited="#resetLabelText"
+                        onAction="#btnDisplaysAction" fx:id="btnDisplays" >
+                    <graphic>
+                        <StackPane onMouseEntered="#highlightOn" onMouseExited="#highlightOff">
+                            <Circle radius="115" styleClass="crcHoverMenu" />
+                            <Circle radius="100" styleClass="crcMenu" />
+                            <Ellipse translateY="-60" radiusX="60" radiusY="35" styleClass="ellMenu" />
+                            <Circle translateY="10" radius="85" styleClass="crcMenu2" />
+                            <ImageView>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnMenuDisplays.png"/>
+                                </image>                            
+                            </ImageView>
+                        </StackPane>
+                    </graphic>  
+                    <effect>
+                        <Reflection />
+                    </effect>    
+                </Button>
+                  
+                    
+                <Button styleClass="btnMenu" id="btnConfig"   
+                        onMouseEntered="#setLabelText" onMouseExited="#resetLabelText"
+                        onAction="#btnConfigAction" fx:id="btnConfig" >
+                    <graphic>
+                        <StackPane onMouseEntered="#highlightOn" onMouseExited="#highlightOff">
+                            <Circle radius="115" styleClass="crcHoverMenu" />
+                            <Circle radius="100" styleClass="crcMenu" />
+                            <Ellipse translateY="-60" radiusX="60" radiusY="35" styleClass="ellMenu" />
+                            <Circle translateY="10" radius="85" styleClass="crcMenu2" />
+                            <ImageView>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnMenuSetup.png"/>
+                                </image>                            
+                            </ImageView>
+                        </StackPane>
+                    </graphic>  
+                    <effect>
+                        <Reflection />
+                    </effect>    
+                </Button>
+                
+                        
+                <Button styleClass="btnMenu" id="btnStart" 
+                        onMouseEntered="#setLabelText" onMouseExited="#resetLabelText"
+                        onAction="#btnStartAction" fx:id="btnStart" >
+                    <graphic>
+                        <StackPane onMouseEntered="#highlightOn" onMouseExited="#highlightOff">
+                            <Circle radius="115" styleClass="crcHoverMenu" />
+                            <Circle radius="100" styleClass="crcMenu" />
+                            <Ellipse translateY="-60" radiusX="60" radiusY="35" styleClass="ellMenu" />
+                            <Circle translateY="10" radius="85" styleClass="crcMenu2" />
+                            <ImageView>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnMenuStart.png"/>
+                                </image>                            
+                            </ImageView>
+                            <Label text="START" textFill="WHITE" opacity="0.5" />
+                        </StackPane>
+                    </graphic>  
+                    <effect>
+                        <Reflection />
+                    </effect>                  
+                </Button>
+            </HBox>
+            
+        </center>
+        <bottom>
+            <BorderPane styleClass="bpBottomMenu" minHeight="150" >
+                <center>
+                    <Label fx:id="bpBottomLabel" textFill="BLACK" styleClass="lbBottomMenu" />
+                </center>
+            </BorderPane>            
+        </bottom>
+    </BorderPane>
+</StackPane>

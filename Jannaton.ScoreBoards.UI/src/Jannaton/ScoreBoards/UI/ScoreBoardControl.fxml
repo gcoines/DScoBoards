@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+
+<StackPane xmlns:fx="http://javafx.com/fxml" styleClass="spScoreBoardControl"
+           fx:controller="Jannaton.ScoreBoards.UI.ScoreBoardControl" 
+           fx:id="spScoreBoardControl" >
+    
+    <children>
+        <GridPane fx:id="gpScoreBoardControl" gridLinesVisible="false" alignment="center" 
+              styleClass="gpScoreBoardControl">
+            <padding>
+                <Insets top="25" right="20" bottom="25" left="20"/>
+            </padding>        
+        </GridPane>
+    </children>
+</StackPane>

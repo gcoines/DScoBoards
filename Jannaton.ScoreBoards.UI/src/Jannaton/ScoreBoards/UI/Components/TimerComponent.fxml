@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="spTimer" id="spTimer" xmlns:fx="http://javafx.com/fxml" 
+           fx:controller="Jannaton.ScoreBoards.UI.Components.TimerComponent">
+    <children>
+        <Label id="label" fx:id="lbTimer" styleClass="lbTimerComponent"/>
+    </children>
+</StackPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<StackPane fx:id="spImage" id="spImage" xmlns:fx="http://javafx.com/fxml" 
+           fx:controller="Jannaton.ScoreBoards.UI.Components.ImageComponent"
+           styleClass="spImage">
+    <children>
+        <ImageView fx:id="imgImage" styleClass="ivImage" />
+    </children>
+</StackPane>

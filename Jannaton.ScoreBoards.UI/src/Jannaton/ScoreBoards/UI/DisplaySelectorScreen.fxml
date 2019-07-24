@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hbScreen" id="hbScreen" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="Jannaton.ScoreBoards.UI.DisplaySelectorScreen" 
+      styleClass="hbScreen" >
+    <children>
+        <StackPane fx:id="spScreen" id="spScreen" styleClass="spScreen">
+            <ImageView fx:id="ivScreen" id="ivScreen" styleClass="ivScreen"/>
+            <Label fx:id="lbScreen" id="lbScreen" styleClass="lbScreen" />
+        </StackPane>
+        
+        <VBox fx:id="vbScreen" id="vbScreen" styleClass="vbScreen">
+            <Label fx:id="lbScreenName" id="lbScreenName" styleClass="lbThumb" />
+        </VBox>
+    </children>
+</HBox>

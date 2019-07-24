@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+
+<StackPane id="AnchorPane" fx:controller="Jannaton.ScoreBoards.UI.ScoreBoardSelector"
+           xmlns:fx="http://javafx.com/fxml" styleClass="spMenu">
+    <AnchorPane maxHeight="150" styleClass="apEfectoCentral" />
+    <BorderPane  styleClass="bpMenu">
+        <top>
+            <BorderPane styleClass="bpTopMenu">
+                <left>                
+                </left>
+                <right>
+                    <Button id="btnBack" text="Go Back" onAction="#btnBack" fx:id="btnBack" />
+                </right>
+        
+            </BorderPane>
+        </top>
+        <center>            
+            <!-- TODO the following buttons list have to be dinamically loaded 
+            with the IScoreBoardUIInfo values -->
+            <HBox id="botonesPanel" styleClass="hbBotones">
+                <Button styleClass="btnMenu" id="btnBasketball" 
+                        onMouseEntered="#setLabelText" onMouseExited="#resetLabelText"
+                        onAction="#btnBasketballAction" fx:id="btnBasketball" >                        
+                    <graphic>
+                        <StackPane onMouseEntered="#highlightOn" onMouseExited="#highlightOff">                            
+                            <Circle radius="115" styleClass="crcHoverMenu" />
+                            <ImageView>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnSportsBasketball.png"/>
+                                </image>                            
+                            </ImageView>
+                        </StackPane>
+                    </graphic>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </Button>
+                    
+                <Button styleClass="btnMenu" id="btnFootball" 
+                        onMouseEntered="#setLabelText" onMouseExited="#resetLabelText"
+                        onAction="#btnFootballAction" fx:id="btnFootball" >
+                    <graphic>
+                        <StackPane onMouseEntered="#highlightOn" onMouseExited="#highlightOff">
+                            <Circle radius="115" styleClass="crcHoverMenu" />
+                            <ImageView>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnSportsFootball.png"/>
+                                </image>                            
+                            </ImageView>
+                        </StackPane>
+                    </graphic>  
+                    <effect>
+                        <Reflection />
+                    </effect>    
+                </Button>
+                   
+                <Button styleClass="btnMenu" id="btnTennis" 
+                        onMouseEntered="#setLabelText" onMouseExited="#resetLabelText"
+                        fx:id="btnTennis" >
+                    <graphic>
+                        <StackPane onMouseEntered="#highlightOn" onMouseExited="#highlightOff">
+                            <Circle radius="115" styleClass="crcHoverMenu" />
+                            <ImageView>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnSportsTennis.png"/>
+                                </image>                            
+                            </ImageView>
+                            <Circle radius="100" styleClass="crcSportsNoAvailable" />
+                            <Label text="NO DISPONIBLE" textFill="WHITE" styleClass="lbNotAvailable" />
+                        </StackPane>
+                    </graphic>  
+                    <effect>
+                        <Reflection />
+                    </effect>    
+                </Button>
+                
+                <Button styleClass="btnMenu" id="btnRugby" 
+                        onMouseEntered="#setLabelText" onMouseExited="#resetLabelText"
+                        fx:id="btnRugby" >
+                    <graphic>
+                        <StackPane onMouseEntered="#highlightOn" onMouseExited="#highlightOff">
+                            <Circle radius="115" styleClass="crcHoverMenu" />
+                            <ImageView>
+                                <image>
+                                    <Image url="@Themes/Original/img/btnSportsRugby.png"/>
+                                </image>                            
+                            </ImageView>
+                            <Circle radius="100" styleClass="crcSportsNoAvailable" />
+                            <Label text="NO DISPONIBLE" textFill="WHITE" styleClass="lbNotAvailable"/>
+                        </StackPane>
+                    </graphic>  
+                    <effect>
+                        <Reflection />
+                    </effect>                  
+                </Button>
+            </HBox>
+            
+        </center>
+        <bottom>
+            <BorderPane styleClass="bpBottomMenu" minHeight="150" >
+                <center>
+                    <Label fx:id="bpBottomLabel" textFill="BLACK" styleClass="lbBottomMenu" />
+                </center>
+            </BorderPane>            
+        </bottom>
+    </BorderPane>    
+</StackPane>

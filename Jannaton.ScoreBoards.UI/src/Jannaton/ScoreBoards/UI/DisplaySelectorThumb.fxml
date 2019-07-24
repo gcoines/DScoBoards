@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hbThumb" id="hbThumbs" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="Jannaton.ScoreBoards.UI.DisplaySelectorThumb" 
+      styleClass="hbThumbs" onMouseClicked="#hbMouseClick">
+    <children>
+        <ImageView fx:id="ivThumb" id="ivThumb" styleClass="ivThumb"/>
+        <Label fx:id="lbThumb" id="lbThumb" styleClass="lbThumb" />
+    </children>
+</HBox>

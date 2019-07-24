@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.transform.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml" fx:controller="Jannaton.ScoreBoards.UI.ScoreBoardConfigurator"
+            styleClass="spMenu">
+    <GridPane styleClass="gpDisplaySelector" alignment="baseline_left" 
+              AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" 
+              AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0">
+        <padding>
+            <Insets top="25" right="25" bottom="25" left="25"/>
+        </padding>
+        <columnConstraints>
+            <ColumnConstraints percentWidth="100"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="30"/>
+            <RowConstraints percentHeight="70"/>
+        </rowConstraints>
+        <GridPane GridPane.rowIndex="0" styleClass="gpDisplaySelector1">
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            
+            <Label styleClass="lbDisplaySelector" GridPane.rowIndex="1"
+                   GridPane.columnSpan="2" GridPane.halignment="LEFT"
+                   text="Configure su marcador."/>
+            <AnchorPane id="botonesPanel" styleClass="hbBotones" GridPane.rowIndex="2"
+                        GridPane.halignment="left" >
+                <HBox>
+                    <Button id="btnBack" onAction="#btnBack" fx:id="btnBack" 
+                            styleClass="btnDisplaySelector">
+                        <graphic>
+                            <StackPane styleClass="spButtonDS">
+                                <Label text="VOLVER" styleClass="lbButtonDisplaySelector"/>
+                            </StackPane>
+                        </graphic>
+                    </Button>
+                    <Button id="btnOk" onAction="#btnOk" fx:id="btnOk" 
+                            styleClass="btnDisplaySelector">
+                        <graphic>
+                            <StackPane styleClass="spButtonDS">
+                                <Label text="OK" styleClass="lbButtonDisplaySelector"/>
+                            </StackPane>
+                        </graphic>
+                    </Button>
+                </HBox>
+                
+            </AnchorPane>  
+        </GridPane>
+        <GridPane GridPane.rowIndex="1" styleClass="gpDisplaySelector2">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="100"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="100"/>
+            </rowConstraints>
+            
+            <GridPane GridPane.rowIndex="0" vgap="25" hgap="25" gridLinesVisible="false">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="50"/>
+                    <ColumnConstraints percentWidth="50"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints percentHeight="100"/>
+                </rowConstraints>
+                <AnchorPane id="botonesPanel" styleClass="hbDisplaySelector" 
+                            GridPane.columnIndex="0" GridPane.columnSpan="2"
+                            GridPane.halignment="left" >
+                    <children>
+                        <ScrollPane fx:id="scpComponents" styleClass="spDisplaySelector"
+                                    AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" 
+                                    AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0">
+                            <VBox fx:id="vbConfigurator" id="vbConfigurator">
+                    
+                            </VBox>
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+            </GridPane>
+        </GridPane>
+        
+    </GridPane>
+</AnchorPane>
