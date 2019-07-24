@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.URL?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane id="stkPane" xmlns:fx="http://javafx.com/fxml" styleClass="spScreenDetector"
+           fx:controller="Jannaton.Displaying.Fx.ScreenIndicatorUI" onMouseClicked="#hideAll">
+        <Label id="label" fx:id="label" textFill="ORANGE" styleClass="lbScreenDetector"/>
+        <stylesheets>
+            <URL value="@screenDetector.css" />
+        </stylesheets>
+</StackPane>

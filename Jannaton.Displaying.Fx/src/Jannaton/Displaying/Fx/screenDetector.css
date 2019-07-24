@@ -1,0 +1,17 @@
+/* 
+    Document   : screenDetector
+    Created on : Oct 31, 2012, 2:02:29 AM
+    Author     : german
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.spScreenDetector{
+    -fx-background-color: black;
+    -fx-opacity: 0.8;
+}
+
+.lbScreenDetector{
+    -fx-font-family: Arial;
+    -fx-font-size: 33pc;
+}
