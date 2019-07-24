@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--SCOREBOARDS XML CONFIG FILE-->
+<scoreboards>
+    <scoreboard sport="basketball" name="Basketball">
+        <layout>
+            <columns>
+                <column hAlignment="center"/>
+                <column />
+                <column />
+            </columns>
+            <rows>
+                <row vAlignment="middle"/>
+                <row />
+                <row />
+                <row />
+                <row />
+            </rows>
+        </layout>
+        <components>
+            <counter id="counter1" colIndex="0" rowIndex="0" rowSpan="2" style="style1"/>
+            <text id="text1" colIndex="0" rowIndex="2" style="style2"/>
+            <counter id="faults1" colIndex="0" rowIndex="3" rowSpan="0" style="style2"/>
+            <text id="ftext1" colIndex="0" rowIndex="4" style="style2"/>
+            <timer id="timer1" colIndex="1" rowIndex="0" style="style1"/>
+            <counter id="period1" colIndex="1" rowIndex="1" style="style1"/>
+            <text id="ptext1" colIndex="1" rowIndex="2" style="style2"/>
+            <counter id="counter2" colIndex="2" rowIndex="0" rowSpan="2" style="style1"/>
+            <text id="text2" colIndex="2" rowIndex="2" style="style2"/>
+            <counter id="faults2" colIndex="2" rowIndex="3" rowSpan="0" style="style2"/>
+            <text id="ftext2" colIndex="2" rowIndex="4" style="style2"/>
+        </components>
+        <styles>
+            <background>
+                <image fileName="scrbBasket.png"/>
+            </background>
+            <style id="style1" fontSize="90%" color="#000000" />
+            <style id="style2" fontSize="85%" color="#000000" />
+        </styles>
+        <menu>
+            <buttonImage fileName="btnSportsBasketball.png"/>
+            <configurations>
+                <configuration id="counter1" fieldName="Local score" minValue="0" maxValue="999"/>
+                <configuration id="text1" fieldName="Local team name" default="LOCAL"/>
+                <configuration id="faults1" fieldName="Local team faults" minValue="0" maxValue="5"/>
+                <configuration id="ftext1" fieldName="Local team faults text" default="FALTAS"/>
+                <configuration id="timer1" fieldName="Period time" minValue="00m00s" maxValue="10m00s"/>
+                <configuration id="period1" fieldName="Period amount" minValue="0" maxValue="4"/>
+                <configuration id="ftext1" fieldName="Period text" default="PERÍODO"/>
+                <configuration id="counter2" fieldName="Visitor score" minValue="0" maxValue="999"/>
+                <configuration id="text2" fieldName="Visitor team name" default="LOCAL"/>
+                <configuration id="faults2" fieldName="Visitor team faults" minValue="0" maxValue="5"/>
+                <configuration id="ftext2" fieldName="Visitor team faults text" default="FALTAS"/>
+            </configurations>
+        </menu>
+    </scoreboard>
+    <scoreboard sport="football" name="Football">
+        <layout>
+            <columns>
+                <column hAlignment="center"/>
+                <column />
+                <column />
+            </columns>
+            <rows>
+                <row vAlignment="middle"/>
+                <row />
+                <row />
+            </rows>
+        </layout>
+        <components>
+            <counter id="counter1" colIndex="0" rowIndex="0" rowSpan="2" style="style1"/>
+            <text id="text1" colIndex="0" rowIndex="2" style="style2"/>            
+            <chronomether id="chrono1" colIndex="1" rowIndex="0" style="style1"/>
+            <counter id="period1" colIndex="1" rowIndex="1" style="style1"/>
+            <text id="ptext1" colIndex="1" rowIndex="2" style="style2"/>
+            <counter id="counter2" colIndex="2" rowIndex="0" rowSpan="2" style="style1"/>
+            <text id="text2" colIndex="2" rowIndex="2" style="style2"/>
+        </components>
+        <styles>
+            <background>
+                <image fileName="scrbBasket.png"/>
+            </background>
+            <style id="style1" fontSize="90%" color="#000000" />
+            <style id="style2" fontSize="85%" color="#000000" />
+        </styles>
+        <menu>
+            <buttonImage fileName="btnSportsFootball.png"/>
+            <configurations>
+                <configuration id="counter1" fieldName="Local score" minValue="0" maxValue="99"/>
+                <configuration id="text1" fieldName="Local team name" default="LOCAL"/>
+                <configuration id="chrono1" fieldName="Period time" minValue="00m00s" maxValue="45m00s"/>
+                <configuration id="period1" fieldName="Period amount" minValue="0" maxValue="2"/>
+                <configuration id="ftext1" fieldName="Period text" default="PERÍODO"/>
+                <configuration id="counter2" fieldName="Visitor score" minValue="0" maxValue="99"/>
+                <configuration id="text2" fieldName="Visitor team name" default="LOCAL"/>
+            </configurations>
+        </menu>
+    </scoreboard>
+    <scoreboard sport="tennis" name="Tennis" available="false">
+        <menu>
+            <buttonImage fileName="btnSportsTennis.png" />
+        </menu>
+    </scoreboard>
+    <scoreboard sport="rugby" name="Rugby" available="false">
+        <menu>
+            <buttonImage fileName="btnSportsRugby.png" />
+        </menu>
+    </scoreboard>
+</scoreboards>
